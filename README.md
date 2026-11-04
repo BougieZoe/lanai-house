@@ -22,7 +22,7 @@
 
 **▶ [Watch the film in the browser](https://bougiezoe.github.io/lanai-house/film/)** &nbsp;·&nbsp; `46 s` &nbsp;·&nbsp; 1080p web · 2K master
 
-Runs on GitHub Pages, so it plays on desktop and phone without downloading anything. The 2K master is also kept in [`media/lanai-house.mp4`](media/lanai-house.mp4).
+Runs on GitHub Pages, so it plays on desktop and phone without downloading anything. The 2K master is archived in the repository at `media/lanai-house.mp4`.
 
 The loop above is a 10-second preview; the full film moves from morning to noon, dusk and night, then through the house: exterior 360°, entrance, LDK, stair, pool, master bedroom and study.
 
