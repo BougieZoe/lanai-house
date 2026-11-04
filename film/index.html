@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111a14" />
+  <title>LANAI — The Film</title>
+  <meta name="description" content="LANAI, a tropical courtyard villa in Hainan. A 46-second 2K architectural film." />
+  <meta property="og:title" content="LANAI — The Film" />
+  <meta property="og:description" content="A tropical courtyard villa in Hainan. Morning to night, 2560 × 1440." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0b110d; --paper: #f4ece0; --muted: rgba(244,236,224,.58);
+      --clay: #b4552d; --line: rgba(244,236,224,.16);
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { background: var(--ink); color: var(--paper); }
+    body { font-family: var(--sans); min-height: 100vh; display: flex; flex-direction: column; }
+    a { color: inherit; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px clamp(20px, 4vw, 56px); border-bottom: 1px solid var(--line);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+    .mark {
+      width: 34px; height: 34px; display: grid; place-items: center; border-radius: 8px;
+      background: var(--clay); color: var(--paper); font-family: var(--serif); font-size: 18px;
+    }
+    .brand strong { display: block; font-family: var(--serif); font-size: 20px; letter-spacing: .14em; font-weight: 500; }
+    .brand small { display: block; font-family: var(--mono); font-size: 9px; letter-spacing: .24em; color: var(--muted); margin-top: 2px; }
+    nav { display: flex; gap: 24px; font-family: var(--mono); font-size: 11px; letter-spacing: .16em; }
+    nav a { text-decoration: none; color: var(--muted); transition: color .25s; }
+    nav a:hover { color: var(--paper); }
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: clamp(24px, 5vh, 64px) clamp(16px, 4vw, 56px) 0; }
+    .stage {
+      position: relative; width: 100%; max-width: 1500px; aspect-ratio: 16 / 9;
+      background: #000; border-radius: 14px; overflow: hidden;
+      box-shadow: 0 40px 120px rgba(0,0,0,.55), 0 0 0 1px var(--line);
+    }
+    .stage video { width: 100%; height: 100%; display: block; object-fit: cover; background: #000; }
+    .meta {
+      width: 100%; max-width: 1500px; display: flex; flex-wrap: wrap; gap: 8px 32px;
+      align-items: baseline; justify-content: space-between; padding: 18px 4px 0;
+    }
+    h1 { font-family: var(--serif); font-size: clamp(26px, 3.4vw, 44px); font-weight: 500; letter-spacing: .06em; }
+    h1 em { font-style: italic; color: var(--muted); font-size: .66em; letter-spacing: .02em; margin-left: 10px; }
+    .spec { font-family: var(--mono); font-size: 10px; letter-spacing: .2em; color: var(--muted); }
+    .spec b { color: var(--paper); font-weight: 500; }
+    .actions { display: flex; gap: 10px; margin-top: 6px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px;
+      border: 1px solid var(--line); text-decoration: none; font-size: 11px; letter-spacing: .12em;
+      font-family: var(--mono); color: var(--paper); background: rgba(255,255,255,.03);
+      transition: background .25s, border-color .25s;
+    }
+    .btn:hover { background: rgba(255,255,255,.09); border-color: rgba(244,236,224,.34); }
+    .btn.primary { background: var(--clay); border-color: var(--clay); }
+    .btn.primary:hover { background: #c2603a; }
+    .chapters {
+      width: 100%; max-width: 1500px; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px; margin: 26px 0 40px;
+    }
+    .ch {
+      border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; cursor: pointer;
+      background: transparent; color: var(--paper); text-align: left; transition: background .2s, border-color .2s;
+    }
+    .ch:hover { background: rgba(255,255,255,.05); border-color: rgba(244,236,224,.3); }
+    .ch time { display: block; font-family: var(--mono); font-size: 10px; color: var(--clay); letter-spacing: .1em; }
+    .ch span { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
+    footer { border-top: 1px solid var(--line); padding: 20px clamp(20px, 4vw, 56px); font-family: var(--mono); font-size: 10px; letter-spacing: .16em; color: var(--muted); display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; }
+    footer a { text-decoration: none; border-bottom: 1px solid transparent; }
+    footer a:hover { border-color: var(--muted); }
+    @media (max-width: 640px) {
+      nav { display: none; }
+      .stage { border-radius: 8px; }
+      .actions .btn { padding: 9px 12px; font-size: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="../">
+      <span class="mark">L</span>
+      <span><strong>LANAI</strong><small>HAINAN / 2026</small></span>
+    </a>
+    <nav>
+      <a href="../">THE HOUSE</a>
+      <a href="../public/models/lanai_house.glb" download>GLB</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="stage">
+      <video id="film" controls playsinline preload="metadata"
+        poster="/lanai-house/assets/lanai-poster-1080-D944axyY.jpg">
+        <source src="/lanai-house/assets/lanai-house-1080-DaenmAMT.mp4" type="video/mp4" />
+        Your browser cannot play this video.
+      </video>
+    </div>
+
+    <div class="meta">
+      <div>
+        <h1>LANAI <em>a tropical courtyard villa · Hainan</em></h1>
+        <div class="spec" style="margin-top:10px">
+          <b>46 SECONDS</b> · 2560 × 1440 · 1080p WEB · NO VOICEOVER
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="../">ENTER THE HOUSE →</a>
+        <a class="btn" id="download" href="#" download>DOWNLOAD 1080P</a>
+      </div>
+    </div>
+
+    <div class="chapters" id="chapters"></div>
+  </main>
+
+  <footer>
+    <span>DESIGN, MODELLING, TEXT &amp; FILM — LANAI STUDY</span>
+    <span><a href="https://github.com/BougieZoe/lanai-house">GITHUB</a> · <a href="../public/models/lanai_house.glb">GLB</a></span>
+  </footer>
+
+  <script>
+    const chapters = [
+      ['00:00', 'Title / first light'], ['00:04', 'Exterior 360°'], ['00:17', 'Approach'],
+      ['00:19', 'Entrance'], ['00:21', 'Living / dining / kitchen'], ['00:26', 'Stair'],
+      ['00:29', 'Pool and engawa'], ['00:35', 'Master bedroom'], ['00:39', 'Dusk'], ['00:42', 'Night'],
+    ];
+    const film = document.getElementById('film');
+    const src = document.querySelector('#film source').getAttribute('src');
+    document.getElementById('download').href = src;
+    const toSeconds = (t) => { const [m, s] = t.split(':').map(Number); return m * 60 + s; };
+    const wrap = document.getElementById('chapters');
+    for (const [time, label] of chapters) {
+      const b = document.createElement('button');
+      b.className = 'ch';
+      b.innerHTML = `<time>${time}</time><span>${label}</span>`;
+      b.title = `Jump to ${label}`;
+      b.onclick = async () => {
+        film.currentTime = toSeconds(time);
+        try { await film.play(); } catch (e) {}
+        film.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      };
+      wrap.appendChild(b);
+    }
+  </script>
+</body>
+</html>
