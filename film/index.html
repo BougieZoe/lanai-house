@@ -98,8 +98,8 @@
   <main>
     <div class="stage">
       <video id="film" controls playsinline preload="metadata"
-        poster="../public/media/lanai-poster-1080.jpg">
-        <source src="../public/media/lanai-house-1080.mp4" type="video/mp4" />
+        poster="../media/lanai-poster-1080.jpg">
+        <source src="../media/lanai-house-1080.mp4" type="video/mp4" />
         Your browser cannot play this video.
       </video>
     </div>
@@ -113,7 +113,7 @@
       </div>
       <div class="actions">
         <a class="btn primary" href="../">ENTER THE HOUSE →</a>
-        <a class="btn" id="download" href="#" download>DOWNLOAD 1080P</a>
+        <a class="btn" id="download" href="../media/lanai-house-1080.mp4" download="LANAI-film-1080p.mp4">DOWNLOAD 1080P MP4</a>
       </div>
     </div>
 
@@ -132,8 +132,6 @@
       ['00:29', 'Pool and engawa'], ['00:35', 'Master bedroom'], ['00:39', 'Dusk'], ['00:42', 'Night'],
     ];
     const film = document.getElementById('film');
-    const src = document.querySelector('#film source').getAttribute('src');
-    document.getElementById('download').href = src;
     const toSeconds = (t) => { const [m, s] = t.split(':').map(Number); return m * 60 + s; };
     const wrap = document.getElementById('chapters');
     for (const [time, label] of chapters) {
