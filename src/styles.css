@@ -64,6 +64,12 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--clay); outline-
   font-size: 12.5px; letter-spacing: 0.12em; transition: color .25s, background .25s;
 }
 .topnav button:hover { color: #fff8ec; background: rgba(255,255,255,0.08); }
+.topnav .topnav-film {
+  display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 999px;
+  border: 1px solid rgba(241,231,211,.22); color: #fff8ec; text-decoration: none;
+  font-size: 11px; letter-spacing: .12em; transition: background .2s, border-color .2s;
+}
+.topnav .topnav-film:hover { background: rgba(180,85,45,.9); border-color: transparent; }
 .top-actions { margin-left: auto; display: flex; gap: 9px; }
 .round-btn {
   display: grid; place-items: center; width: 40px; height: 40px;

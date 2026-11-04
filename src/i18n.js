@@ -15,11 +15,14 @@ export const LANGUAGES = [
 
 const zh = {
   meta: {
+
     title: 'LANAI · Hainan | A tropical courtyard villa',
     description: '一栋会呼吸的海南热带住宅：深檐、檐廊、穿堂风与泳池。Blender + three.js 交互模型。',
   },
   nav: ['概念', '空间', '材料', '气候', '图纸'],
   ui: {
+
+    film: '影片',
     autoRotate: '自动旋转',
     panelToggle: '收起 / 展开右侧信息栏',
     panelClose: '收起信息栏',
@@ -56,6 +59,7 @@ const zh = {
     },
   },
   panel: {
+
     eyebrow: 'HAINAN · TROPICAL RESIDENCE · 2026',
     titleHtml: '把一栋会呼吸的家，<br /><em>安在海南。</em>',
     lede: '一栋会呼吸的家：深檐、穿堂风、檐廊与一池水，把日常安放在海南的热带光线里。',
@@ -93,6 +97,7 @@ const zh = {
     },
   },
   rooms: {
+
     living: {
       kicker: 'SPACE 01 / LDK', name: '客厅 / 餐厅 / 厨房', title: '客厅 · 餐厅 · 厨房', area: 'LDK · 65 m²',
       text: '朝南的客厅、中央餐桌与靠西的厨房连成一片。午后把北侧推拉门全部打开，风从檐廊穿进来，白衬衫在阳台上慢慢晾干。',
@@ -125,10 +130,12 @@ const zh = {
     },
   },
   labels: {
+
     ldk: '客厅 / 餐厨', engawa: '后檐廊', master: '主卧', kids: '儿童房', study: '书房',
     guest: '客房', pool: '泳池', pavilion: '凉亭', carport: '车棚', shiro: '狗屋',
   },
   plan: {
+
     labels: {
       living: '客厅', dining: '餐厅', kitchen: '厨房', tatami: '茶室', powder: '盥洗', laundry: '家政',
       entry: '玄关', stair: '楼梯', wc: '卫生间', guest: '客房', bath: '卫浴', gardenHall: '花园门厅',
@@ -138,6 +145,7 @@ const zh = {
     },
   },
   roam: {
+
     rooms: {
       front: '前院', garden: '后花园', east: '东侧花园', west: '西侧花园', engawa: '后檐廊', porch: '入口门廊',
       living: '客厅', dining: '餐厅', kitchen: '厨房', tea: '茶室', powder: '盥洗', laundry: '家政',
@@ -150,11 +158,14 @@ const zh = {
 
 const en = {
   meta: {
+
     title: 'LANAI · Hainan | A tropical courtyard villa',
     description: 'A house that breathes: deep eaves, cross ventilation, an engawa and a pool in tropical Hainan. Interactive Blender + three.js model.',
   },
   nav: ['Concept', 'Spaces', 'Materials', 'Climate', 'Drawings'],
   ui: {
+
+    film: 'Film',
     autoRotate: 'Auto rotate',
     panelToggle: 'Show / hide information panel',
     panelClose: 'Close information',
@@ -191,6 +202,7 @@ const en = {
     },
   },
   panel: {
+
     eyebrow: 'HAINAN · TROPICAL RESIDENCE · 2026',
     titleHtml: 'A house that breathes,<br /><em>rooted in Hainan.</em>',
     lede: 'A two-storey pitched roof, a small front yard, a laundry pole and a doghouse: the everydayness of a compact family house. We kept that feeling and rewrote it for Hainan with deep eaves, cross ventilation, an engawa and a pool.',
@@ -228,6 +240,7 @@ const en = {
     },
   },
   rooms: {
+
     living: {
       kicker: 'SPACE 01 / LDK', name: 'LIVING / DINING / KITCHEN', title: 'Living · Dining · Kitchen', area: 'LDK · 65 m²',
       text: 'A south-facing living room, a central dining table and a kitchen against the west wall form one continuous space. Open the north sliding doors in the afternoon and the breeze moves through the engawa while a white shirt dries on the balcony.',
@@ -260,10 +273,12 @@ const en = {
     },
   },
   labels: {
+
     ldk: 'Living / Kitchen', engawa: 'Rear Engawa', master: 'Master', kids: 'Kids', study: 'Study',
     guest: 'Guest', pool: 'Pool', pavilion: 'Pavilion', carport: 'Carport', shiro: 'Doghouse',
   },
   plan: {
+
     labels: {
       living: 'Living', dining: 'Dining', kitchen: 'Kitchen', tatami: 'Tea room', powder: 'Powder', laundry: 'Laundry',
       entry: 'Entry', stair: 'Stair', wc: 'WC', guest: 'Guest', bath: 'Bath', gardenHall: 'Garden hall',
@@ -273,6 +288,7 @@ const en = {
     },
   },
   roam: {
+
     rooms: {
       front: 'Front garden', garden: 'Rear garden', east: 'East garden', west: 'West garden', engawa: 'Rear engawa', porch: 'Entry porch',
       living: 'Living', dining: 'Dining', kitchen: 'Kitchen', tea: 'Tea room', powder: 'Powder', laundry: 'Laundry',
@@ -285,11 +301,14 @@ const en = {
 
 const ja = {
   meta: {
+
     title: 'LANAI · Hainan | A tropical courtyard villa',
     description: '風が通り抜ける海南の熱帯住宅。深い軒、縁側、プール。Blender + three.js のインタラクティブモデル。',
   },
   nav: ['コンセプト', '空間', '素材', '気候', '図面'],
   ui: {
+
+    film: '映像',
     autoRotate: '自動回転',
     panelToggle: '情報パネルを開閉',
     panelClose: '情報を閉じる',
@@ -314,6 +333,7 @@ const ja = {
     },
   },
   panel: {
+
     eyebrow: 'HAINAN · TROPICAL RESIDENCE · 2026',
     titleHtml: '風が通る家を、<br /><em>海南に。</em>',
     lede: '切妻屋根の2階建て、小さな前庭、物干し竿、犬小屋。小さな家族の家の日常をそのままに、深い軒、通り抜ける風、縁側、そして水盤で海南の住まいへと書き換えました。',
@@ -351,6 +371,7 @@ const ja = {
     },
   },
   rooms: {
+
     living: {
       kicker: 'SPACE 01 / LDK', name: 'リビング / ダイニング / キッチン', title: 'リビング・ダイニング・キッチン', area: 'LDK · 65 m²',
       text: '南向きのリビング、中央のダイニングテーブル、西壁に沿ったキッチンがひとつながりになっています。午後に北側の引き戸を全開にすると、縁側から風が入り、バルコニーの白いシャツがゆっくり乾いていきます。',
@@ -383,10 +404,12 @@ const ja = {
     },
   },
   labels: {
+
     ldk: 'リビング / キッチン', engawa: '裏縁側', master: '主寝室', kids: '子供部屋', study: '書斎',
     guest: 'ゲスト', pool: 'プール', pavilion: 'パビリオン', carport: 'カーポート', shiro: '犬小屋',
   },
   plan: {
+
     labels: {
       living: 'リビング', dining: 'ダイニング', kitchen: 'キッチン', tatami: '茶室', powder: '洗面', laundry: '家事室',
       entry: '玄関', stair: '階段', wc: 'トイレ', guest: 'ゲスト', bath: '浴室', gardenHall: '庭の間',
@@ -396,6 +419,7 @@ const ja = {
     },
   },
   roam: {
+
     rooms: {
       front: '前庭', garden: '裏庭', east: '東の庭', west: '西の庭', engawa: '裏縁側', porch: '玄関ポーチ',
       living: 'リビング', dining: 'ダイニング', kitchen: 'キッチン', tea: '茶室', powder: '洗面', laundry: '家事室',
@@ -408,11 +432,14 @@ const ja = {
 
 const ko = {
   meta: {
+
     title: 'LANAI · Hainan | A tropical courtyard villa',
     description: '바람이 통하는 하이난의 열대 주택. 깊은 처마, 엔가와, 수영장. Blender + three.js 인터랙티브 모델.',
   },
   nav: ['콘셉트', '공간', '재료', '기후', '도면'],
   ui: {
+
+    film: '영상',
     autoRotate: '자동 회전',
     panelToggle: '정보 패널 열기 / 닫기',
     panelClose: '정보 닫기',
@@ -437,6 +464,7 @@ const ko = {
     },
   },
   panel: {
+
     eyebrow: 'HAINAN · TROPICAL RESIDENCE · 2026',
     titleHtml: '바람이 통하는 집을,<br /><em>하이난에.</em>',
     lede: '박공지붕 2층집, 작은 앞마당, 빨랫대, 개집. 작은 가족집의 일상을 그대로 두고 깊은 처마와 통풍, 엔가와, 물을 더해 하이난의 주거로 다시 썼습니다.',
@@ -474,6 +502,7 @@ const ko = {
     },
   },
   rooms: {
+
     living: {
       kicker: 'SPACE 01 / LDK', name: '거실 / 다이닝 / 주방', title: '거실 · 다이닝 · 주방', area: 'LDK · 65 m²',
       text: '남향 거실, 중앙 식탁, 서쪽 벽을 따라 놓인 주방이 하나로 이어집니다. 오후에 북쪽 미닫이문을 모두 열면 엔가와로 바람이 들어오고, 발코니의 흰 셔츠가 천천히 마릅니다.',
@@ -506,10 +535,12 @@ const ko = {
     },
   },
   labels: {
+
     ldk: '거실 / 주방', engawa: '뒷 엔가와', master: '안방', kids: '어린이방', study: '서재',
     guest: '게스트', pool: '수영장', pavilion: '정자', carport: '카포트', shiro: '개집',
   },
   plan: {
+
     labels: {
       living: '거실', dining: '다이닝', kitchen: '주방', tatami: '다실', powder: '세면', laundry: '세탁',
       entry: '현관', stair: '계단', wc: '화장실', guest: '게스트', bath: '욕실', gardenHall: '가든 홀',
@@ -519,6 +550,7 @@ const ko = {
     },
   },
   roam: {
+
     rooms: {
       front: '앞마당', garden: '뒷정원', east: '동쪽 정원', west: '서쪽 정원', engawa: '뒷 엔가와', porch: '입구 포치',
       living: '거실', dining: '다이닝', kitchen: '주방', tea: '다실', powder: '세면실', laundry: '세탁실',
@@ -531,11 +563,14 @@ const ko = {
 
 const fr = {
   meta: {
+
     title: 'LANAI · Hainan | Une villa tropicale',
     description: 'Une maison qui respire à Hainan : grands débords, engawa, ventilation traversante et piscine. Modèle interactif Blender + three.js.',
   },
   nav: ['Concept', 'Espaces', 'Matières', 'Climat', 'Plans'],
   ui: {
+
+    film: 'Film',
     autoRotate: 'Rotation auto', panelToggle: 'Afficher / masquer le panneau', panelClose: 'Fermer les informations', panelReopen: 'Infos',
     dock: [['Vue', 'OVERVIEW'], ['Entrée', 'ENTRY'], ['Jardin', 'GARDEN'], ['Piscine', 'POOL'], ['Coupe', 'CUTAWAY']],
     tools: { roam: 'Visite', roof: 'Toit', floor: 'Étage', labels: 'Labels', plan: 'Plans' },
@@ -557,6 +592,7 @@ const fr = {
     },
   },
   panel: {
+
     eyebrow: 'HAINAN · TROPICAL RESIDENCE · 2026',
     titleHtml: 'Une maison qui respire,<br /><em>posée à Hainan.</em>',
     lede: 'Un toit à deux pans, une petite cour, un fil à linge et une niche : le quotidien d’une maison familiale compacte. Nous avons gardé cette sensation et l’avons réécrite pour Hainan avec de grands débords, une ventilation traversante, un engawa et une piscine.',
@@ -594,6 +630,7 @@ const fr = {
     },
   },
   rooms: {
+
     living: {
       kicker: 'SPACE 01 / LDK', name: 'SÉJOUR / SALLE À MANGER / CUISINE', title: 'Séjour · Salle à manger · Cuisine', area: 'LDK · 65 m²',
       text: 'Un séjour au sud, une table centrale et une cuisine le long du mur ouest forment un seul espace. L’après-midi, ouvrez les baies coulissantes au nord : la brise traverse l’engawa pendant qu’une chemise blanche sèche sur le balcon.',
@@ -626,10 +663,12 @@ const fr = {
     },
   },
   labels: {
+
     ldk: 'Séjour / Cuisine', engawa: 'Engawa arrière', master: 'Chambre principale', kids: 'Enfants', study: 'Bureau',
     guest: 'Amis', pool: 'Piscine', pavilion: 'Pavillon', carport: 'Carport', shiro: 'Niche',
   },
   plan: {
+
     labels: {
       living: 'Séjour', dining: 'Salle à manger', kitchen: 'Cuisine', tatami: 'Salon de thé', powder: 'Toilettes', laundry: 'Buanderie',
       entry: 'Entrée', stair: 'Escalier', wc: 'WC', guest: 'Amis', bath: 'Bain', gardenHall: 'Hall jardin',
@@ -639,6 +678,7 @@ const fr = {
     },
   },
   roam: {
+
     rooms: {
       front: 'Jardin avant', garden: 'Jardin arrière', east: 'Jardin est', west: 'Jardin ouest', engawa: 'Engawa arrière', porch: 'Porche',
       living: 'Séjour', dining: 'Salle à manger', kitchen: 'Cuisine', tea: 'Salon de thé', powder: 'Toilettes', laundry: 'Buanderie',
@@ -651,11 +691,14 @@ const fr = {
 
 const de = {
   meta: {
+
     title: 'LANAI · Hainan | Eine tropische Villa',
     description: 'Ein Haus, das atmet: tiefe Dächer, Engawa, Querlüftung und Pool in Hainan. Interaktives Blender- und three.js-Modell.',
   },
   nav: ['Konzept', 'Räume', 'Materialien', 'Klima', 'Pläne'],
   ui: {
+
+    film: 'Film',
     autoRotate: 'Auto-Rotation', panelToggle: 'Infofenster ein-/ausblenden', panelClose: 'Infos schließen', panelReopen: 'Info',
     dock: [['Gesamt', 'OVERVIEW'], ['Eingang', 'ENTRY'], ['Garten', 'GARDEN'], ['Pool', 'POOL'], ['Schnitt', 'CUTAWAY']],
     tools: { roam: 'Rundgang', roof: 'Dach', floor: 'Obergeschoss', labels: 'Labels', plan: 'Pläne' },
@@ -677,6 +720,7 @@ const de = {
     },
   },
   panel: {
+
     eyebrow: 'HAINAN · TROPICAL RESIDENCE · 2026',
     titleHtml: 'Ein Haus, das atmet,<br /><em>verwurzelt in Hainan.</em>',
     lede: 'Ein zweigeschossiges Satteldach, ein kleiner Vorgarten, eine Wäscheleine und eine Hundehütte: der Alltag eines kompakten Familienhauses. Wir haben dieses Gefühl bewahrt und für Hainan neu geschrieben – mit tiefen Dächern, Querlüftung, Engawa und Pool.',
@@ -714,6 +758,7 @@ const de = {
     },
   },
   rooms: {
+
     living: {
       kicker: 'SPACE 01 / LDK', name: 'WOHNEN / ESSEN / KÜCHE', title: 'Wohnen · Essen · Küche', area: 'LDK · 65 m²',
       text: 'Ein nach Süden orientiertes Wohnzimmer, ein zentraler Esstisch und eine Küche an der Westwand bilden einen Raum. Öffnet man nachmittags die nördlichen Schiebetüren, zieht die Brise durch das Engawa, während ein weißes Hemd auf dem Balkon trocknet.',
@@ -746,10 +791,12 @@ const de = {
     },
   },
   labels: {
+
     ldk: 'Wohnen / Küche', engawa: 'Engawa', master: 'Eltern', kids: 'Kinder', study: 'Arbeit',
     guest: 'Gäste', pool: 'Pool', pavilion: 'Pavillon', carport: 'Carport', shiro: 'Hundehütte',
   },
   plan: {
+
     labels: {
       living: 'Wohnen', dining: 'Essen', kitchen: 'Küche', tatami: 'Teezimmer', powder: 'WC', laundry: 'Wäsche',
       entry: 'Eingang', stair: 'Treppe', wc: 'WC', guest: 'Gäste', bath: 'Bad', gardenHall: 'Gartenhalle',
@@ -759,6 +806,7 @@ const de = {
     },
   },
   roam: {
+
     rooms: {
       front: 'Vorgarten', garden: 'Hintergarten', east: 'Ostgarten', west: 'Westgarten', engawa: 'Engawa', porch: 'Eingangsbereich',
       living: 'Wohnen', dining: 'Essen', kitchen: 'Küche', tea: 'Teezimmer', powder: 'WC', laundry: 'Wäsche',
@@ -771,11 +819,14 @@ const de = {
 
 const es = {
   meta: {
+
     title: 'LANAI · Hainan | Una villa tropical',
     description: 'Una casa que respira en Hainan: aleros profundos, engawa, ventilación cruzada y piscina. Modelo interactivo Blender + three.js.',
   },
   nav: ['Concepto', 'Espacios', 'Materiales', 'Clima', 'Planos'],
   ui: {
+
+    film: 'Película',
     autoRotate: 'Rotación automática', panelToggle: 'Mostrar / ocultar información', panelClose: 'Cerrar información', panelReopen: 'Info',
     dock: [['General', 'OVERVIEW'], ['Entrada', 'ENTRY'], ['Jardín', 'GARDEN'], ['Piscina', 'POOL'], ['Sección', 'CUTAWAY']],
     tools: { roam: 'Paseo', roof: 'Cubierta', floor: 'Planta alta', labels: 'Etiquetas', plan: 'Planos' },
@@ -797,6 +848,7 @@ const es = {
     },
   },
   panel: {
+
     eyebrow: 'HAINAN · TROPICAL RESIDENCE · 2026',
     titleHtml: 'Una casa que respira,<br /><em>arraigada en Hainan.</em>',
     lede: 'Una cubierta a dos aguas, un pequeño jardín delantero, un tendedero y una caseta de perro: la cotidianidad de una casa familiar compacta. Conservamos esa sensación y la reescribimos para Hainan con aleros profundos, ventilación cruzada, engawa y piscina.',
@@ -834,6 +886,7 @@ const es = {
     },
   },
   rooms: {
+
     living: {
       kicker: 'SPACE 01 / LDK', name: 'SALÓN / COMEDOR / COCINA', title: 'Salón · Comedor · Cocina', area: 'LDK · 65 m²',
       text: 'Un salón orientado al sur, una mesa central y una cocina junto al muro oeste forman un solo espacio. Al abrir las correderas del norte por la tarde, la brisa atraviesa el engawa mientras una camisa blanca se seca en el balcón.',
@@ -866,10 +919,12 @@ const es = {
     },
   },
   labels: {
+
     ldk: 'Salón / Cocina', engawa: 'Engawa', master: 'Principal', kids: 'Infantil', study: 'Estudio',
     guest: 'Invitados', pool: 'Piscina', pavilion: 'Pabellón', carport: 'Cochera', shiro: 'Caseta',
   },
   plan: {
+
     labels: {
       living: 'Salón', dining: 'Comedor', kitchen: 'Cocina', tatami: 'Sala de té', powder: 'Aseo', laundry: 'Lavandería',
       entry: 'Entrada', stair: 'Escalera', wc: 'Aseo', guest: 'Invitados', bath: 'Baño', gardenHall: 'Vestíbulo jardín',
@@ -879,6 +934,7 @@ const es = {
     },
   },
   roam: {
+
     rooms: {
       front: 'Jardín delantero', garden: 'Jardín trasero', east: 'Jardín este', west: 'Jardín oeste', engawa: 'Engawa', porch: 'Porche',
       living: 'Salón', dining: 'Comedor', kitchen: 'Cocina', tea: 'Sala de té', powder: 'Aseo', laundry: 'Lavandería',
@@ -891,11 +947,14 @@ const es = {
 
 const it = {
   meta: {
+
     title: 'LANAI · Hainan | Una villa tropicale',
     description: 'Una casa che respira a Hainan: ampi sporti, engawa, ventilazione trasversale e piscina. Modello interattivo Blender + three.js.',
   },
   nav: ['Concetto', 'Spazi', 'Materiali', 'Clima', 'Tavole'],
   ui: {
+
+    film: 'Film',
     autoRotate: 'Rotazione automatica', panelToggle: 'Mostra / nascondi informazioni', panelClose: 'Chiudi informazioni', panelReopen: 'Info',
     dock: [['Panoramica', 'OVERVIEW'], ['Ingresso', 'ENTRY'], ['Giardino', 'GARDEN'], ['Piscina', 'POOL'], ['Sezione', 'CUTAWAY']],
     tools: { roam: 'Visita', roof: 'Tetto', floor: 'Piano', labels: 'Etichette', plan: 'Tavole' },
@@ -917,6 +976,7 @@ const it = {
     },
   },
   panel: {
+
     eyebrow: 'HAINAN · TROPICAL RESIDENCE · 2026',
     titleHtml: 'Una casa che respira,<br /><em>radicata a Hainan.</em>',
     lede: 'Un tetto a due falde, un piccolo giardino, uno stendibiancheria e una cuccia: la quotidianità di una casa familiare compatta. Abbiamo conservato quella sensazione e l’abbiamo riscritta per Hainan con sporti profondi, ventilazione trasversale, engawa e piscina.',
@@ -954,6 +1014,7 @@ const it = {
     },
   },
   rooms: {
+
     living: {
       kicker: 'SPACE 01 / LDK', name: 'SOGGIORNO / PRANZO / CUCINA', title: 'Soggiorno · Pranzo · Cucina', area: 'LDK · 65 m²',
       text: 'Un soggiorno a sud, un tavolo centrale e una cucina lungo la parete ovest formano un unico spazio. Aprendo le porte scorrevoli a nord nel pomeriggio, la brezza attraversa l’engawa mentre una camicia bianca asciuga sul balcone.',
@@ -986,10 +1047,12 @@ const it = {
     },
   },
   labels: {
+
     ldk: 'Soggiorno / Cucina', engawa: 'Engawa', master: 'Padronale', kids: 'Cameretta', study: 'Studio',
     guest: 'Ospiti', pool: 'Piscina', pavilion: 'Padiglione', carport: 'Posto auto', shiro: 'Cuccia',
   },
   plan: {
+
     labels: {
       living: 'Soggiorno', dining: 'Pranzo', kitchen: 'Cucina', tatami: 'Stanza del tè', powder: 'Bagno', laundry: 'Lavanderia',
       entry: 'Ingresso', stair: 'Scala', wc: 'WC', guest: 'Ospiti', bath: 'Bagno', gardenHall: 'Atrio giardino',
@@ -999,6 +1062,7 @@ const it = {
     },
   },
   roam: {
+
     rooms: {
       front: 'Giardino anteriore', garden: 'Giardino posteriore', east: 'Giardino est', west: 'Giardino ovest', engawa: 'Engawa', porch: 'Portico',
       living: 'Soggiorno', dining: 'Pranzo', kitchen: 'Cucina', tea: 'Stanza del tè', powder: 'Bagno', laundry: 'Lavanderia',

@@ -804,6 +804,8 @@ function setLanguage(code, save = true) {
 
   $$('.topnav button[data-scroll]').forEach((b, i) => { b.textContent = t.nav[i]; });
   $('#planOpenTop').textContent = t.nav[4];
+  const filmLink = $('.topnav-film');
+  if (filmLink) filmLink.textContent = t.ui.film;
   $$('.dock-btn').forEach((b, i) => {
     const item = t.ui.dock[i];
     if (!item) return;

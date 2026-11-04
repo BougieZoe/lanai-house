@@ -18,13 +18,15 @@
 
 ## The film
 
-[![LANAI — a 46-second 2K film](renders/lanai-loop.gif)](media/lanai-house.mp4)
+[![LANAI — a 46-second architectural film](renders/lanai-loop.gif)](https://bougiezoe.github.io/lanai-house/film/)
 
-**▶ [Watch the full 46-second film in 2K](media/lanai-house.mp4)** &nbsp;·&nbsp; `2560 × 1440` &nbsp;·&nbsp; no voiceover
+**▶ [Watch the film in the browser](https://bougiezoe.github.io/lanai-house/film/)** &nbsp;·&nbsp; `46 s` &nbsp;·&nbsp; 1080p web · 2K master
+
+Runs on GitHub Pages, so it plays on desktop and phone without downloading anything. The 2K master is also kept in [`media/lanai-house.mp4`](media/lanai-house.mp4).
 
 The loop above is a 10-second preview; the full film moves from morning to noon, dusk and night, then through the house: exterior 360°, entrance, LDK, stair, pool, master bedroom and study.
 
-*If the loop does not autoplay in your reader, open the [poster](renders/lanai-poster.jpg) or the [MP4](media/lanai-house.mp4) directly.*
+*If the loop does not autoplay in your reader, open the [poster](renders/lanai-poster.jpg) or the [film page](https://bougiezoe.github.io/lanai-house/film/) directly.*
 
 <details>
 <summary>Film chapters</summary>

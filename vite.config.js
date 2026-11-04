@@ -8,5 +8,11 @@ export default defineConfig({
   build: {
     target: 'es2020',
     cssCodeSplit: true,
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        film: 'film/index.html',
+      },
+    },
   },
 });
