@@ -2,6 +2,7 @@ import './styles.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
@@ -14,6 +15,8 @@ import { I18N, LANGUAGES, getLang } from './i18n.js';
 import { renderPanel } from './panel.js';
 import { createRoamController } from './roam.js';
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+const asset = (path) => `${ASSET_BASE}${path}`;
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
@@ -30,7 +33,9 @@ const renderer = new THREE.WebGLRenderer({
   antialias: true, alpha: false, powerPreference: 'high-performance',
   stencil: false,
 });
-renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+const coarsePointer = window.matchMedia('(pointer: coarse)').matches;
+const DPR_CAP = coarsePointer ? 1.5 : 2;
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, DPR_CAP));
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -142,7 +147,7 @@ addTreeLine();
 
 // post processing
 const composer = new EffectComposer(renderer);
-composer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+composer.setPixelRatio(Math.min(window.devicePixelRatio || 1, DPR_CAP));
 const renderPass = new RenderPass(scene, camera);
 const bloom = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 0.14, 0.75, 0.92);
 const outputPass = new OutputPass();
@@ -203,7 +208,7 @@ const ROOM_VIEWS = {
 
 // -------------------------------------------------------------------- water
 function setupWater(mesh) {
-  waterNormal = new THREE.TextureLoader().load('/textures/water_normal.png');
+  waterNormal = new THREE.TextureLoader().load(asset('textures/water_normal.png'));
   waterNormal.wrapS = waterNormal.wrapT = THREE.RepeatWrapping;
   waterNormal.repeat.set(4.5, 3.0);
   waterNormal.colorSpace = THREE.NoColorSpace;
@@ -397,8 +402,11 @@ function setLabels(on) {
 
 // ------------------------------------------------------------------ loading
 const loader = new GLTFLoader();
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderPath(asset('draco/'));
+loader.setDRACOLoader(dracoLoader);
 let loadStart = performance.now();
-loader.load('/models/lanai_house.glb', (gltf) => {
+loader.load(asset('models/lanai_house.glb'), (gltf) => {
   model = gltf.scene;
   model.name = 'LANAI_HOUSE';
   model.traverse((o) => {
@@ -441,7 +449,7 @@ loader.load('/models/lanai_house.glb', (gltf) => {
   console.error(err);
   $('#loading').classList.add('is-hidden');
   $('#error').classList.add('is-on');
-  $('#errorText').textContent = '模型文件没有加载成功。请确认 public/models/lanai_house.glb 存在，并通过本地开发服务器打开页面。';
+  $('#errorText').textContent = 'The 3D model could not load. Check your connection, then refresh the page.';
 });
 
 // --------------------------------------------------------------- interior lights
@@ -527,8 +535,21 @@ function tweenView(view, duration = 1.5) {
   viewTween = { from, to, t: 0, duration, started: performance.now() };
   controls.enabled = false;
 }
-function setView(name, immediate = false) {
+function resolvedView(name) {
   const view = VIEWS[name];
+  if (!view) return null;
+  if (name === 'overview' && window.matchMedia('(max-width: 760px)').matches) {
+    return {
+      ...view,
+      pos: [view.pos[0] * 1.32, view.pos[1] * 1.14, view.pos[2] * 1.32],
+      fov: 47,
+    };
+  }
+  return view;
+}
+
+function setView(name, immediate = false) {
+  const view = resolvedView(name);
   if (!view) return;
   if (name === 'cutaway') {
     setRoof(false);

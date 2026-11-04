@@ -6,6 +6,11 @@
 <p align="center"><em>A tropical courtyard villa, written for the Hainan light.</em></p>
 
 <p align="center">
+  <a href="https://bougiezoe.github.io/lanai-house/"><strong>▶ OPEN LANAI LIVE →</strong></a><br>
+  <sub>Desktop and phone · no install · WebGL2</sub>
+</p>
+
+<p align="center">
   <code>Blender 5.2</code> &nbsp;·&nbsp; <code>glTF 2.0</code> &nbsp;·&nbsp; <code>three.js r181</code> &nbsp;·&nbsp; <code>2026</code>
 </p>
 
@@ -48,9 +53,9 @@ The loop above is a 10-second preview; the full film moves from morning to noon,
 
 [![Download the LANAI GLB](renders/lanai-model.jpg)](public/models/lanai_house.glb)
 
-**[Download the GLB →](public/models/lanai_house.glb)** &nbsp;·&nbsp; `18.6 MB` &nbsp;·&nbsp; 10 merged meshes
+**[Download the GLB →](public/models/lanai_house.glb)** &nbsp;·&nbsp; `10.7 MB` &nbsp;·&nbsp; 10 merged meshes
 
-The GLB is the same model used in the viewer. Open it in Blender, or drag it into [glTF Viewer](https://gltf-viewer.donmccurdy.com/). The pool water is kept as a separate mesh so it can animate; everything else is merged for real-time performance.
+The GLB is the same model used in the viewer, Draco-compressed to 10.7 MB. Open it in Blender, or drag it into [glTF Viewer](https://gltf-viewer.donmccurdy.com/). The pool water is kept as a separate mesh so it can animate; everything else is merged for real-time performance.
 
 ---
 
@@ -202,6 +207,10 @@ The same house, read in three lights. The stair is a clear object in the hall �
 
 The viewer includes:
 
+**[Open the live house →](https://bougiezoe.github.io/lanai-house/)** · works on desktop and phone
+
+The live build uses GitHub Pages (free static hosting), a Draco-compressed GLB, and a DPR cap of 1.5 on touch devices / 2 on desktop. Nothing is installed; the model streams and the loading bar shows progress.
+
 - Five camera views: **overview, entry, garden, pool, cutaway**
 - **Day / dusk / night** lighting
 - Roof, upper floor and room labels independently switchable
@@ -249,7 +258,7 @@ src/
   roam.js                 first-person controller and collision
   plan.js                 generated 1F / 2F plans
 
-public/models/            lanai_house.glb (18.6 MB, 10 merged meshes)
+public/models/            lanai_house.glb (10.7 MB, 10 merged meshes)
 media/                    lanai-house.mp4 (46 seconds, 2560 × 1440)
 renders/                  stills, cover, palette, README loop
 ```

@@ -207,7 +207,8 @@ export class HainanEnvironment {
     this.sun = new THREE.DirectionalLight(0xfff2d8, 3.1);
     this.sun.position.copy(MODES.day.sunDir).multiplyScalar(70);
     this.sun.castShadow = true;
-    this.sun.shadow.mapSize.set(2048, 2048);
+    const coarse = window.matchMedia('(pointer: coarse)').matches;
+    this.sun.shadow.mapSize.set(coarse ? 1024 : 2048, coarse ? 1024 : 2048);
     this.sun.shadow.camera.left = -25;
     this.sun.shadow.camera.right = 25;
     this.sun.shadow.camera.top = 25;
