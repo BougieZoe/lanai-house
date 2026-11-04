@@ -37,15 +37,14 @@ def cover():
     # subtle texture line
     d.rectangle([(92, 156), (148, 160)], fill=(180, 85, 45))
     tracking(d, (92, 182), "HAINAN  /  ARCHITECTURAL STUDY", font(MONO, 15), (226, 215, 196), 3)
-    d.text((80, 258), "kaze.house", font=font(GEORGIA, 108), fill=(248, 242, 229))
-    d.text((96, 402), "风之家 · 海南", font=font(SERIF, 27), fill=(214, 203, 184))
-    tracking(d, (96, 442), "KAZE HOUSE / HAINAN", font(MONO, 14), (242, 233, 216), 4)
-    d.text((96, 486), "A tropical courtyard villa, written for the Hainan light.", font=font(GEORGIA_IT, 25), fill=(214, 203, 184))
-    d.text((96, 538), "Deep eaves · cross ventilation · engawa · water", font=font(GEORGIA, 18), fill=(176, 164, 145))
-    d.line([(96, 610), (500, 610)], fill=(120, 108, 91), width=1)
-    tracking(d, (96, 636), "26 × 31 M SITE   /   190 M²   /   3 BEDROOMS", font(MONO, 13), (190, 178, 158), 2)
-    d.text((96, 790), "2026", font=font(GEORGIA, 18), fill=(160, 146, 126))
-    im.save(OUT / "kaze-cover.jpg", quality=92, optimize=True, progressive=True)
+    d.text((80, 258), "LANAI", font=font(GEORGIA, 108), fill=(248, 242, 229))
+    tracking(d, (96, 402), "HAINAN / 2026", font(MONO, 15), (214, 203, 184), 4)
+    d.text((96, 448), "A tropical courtyard villa, written for the Hainan light.", font=font(GEORGIA_IT, 25), fill=(214, 203, 184))
+    d.text((96, 500), "Deep eaves · cross ventilation · engawa · water", font=font(GEORGIA, 18), fill=(176, 164, 145))
+    d.line([(96, 560), (500, 560)], fill=(120, 108, 91), width=1)
+    tracking(d, (96, 584), "26 × 31 M SITE   /   190 M²   /   3 BEDROOMS", font(MONO, 13), (190, 178, 158), 2)
+    d.text((96, 780), "2026", font=font(GEORGIA, 18), fill=(160, 146, 126))
+    im.save(OUT / "lanai-cover.jpg", quality=92, optimize=True, progressive=True)
 
 def ImageOps_fit(im, size):
     from PIL import ImageOps
@@ -72,8 +71,8 @@ def poster():
     d.ellipse([(cx-r, cy-r), (cx+r, cy+r)], outline=(245, 236, 219), width=2)
     d.polygon([(cx-15, cy-22), (cx-15, cy+22), (cx+24, cy)], fill=(245, 236, 219))
     tracking(d, (72, 760), "WATCH THE FILM  /  2K", font(MONO, 16), (245, 236, 219), 4)
-    d.text((72, 800), "KAZE HOUSE · HAINAN", font=font(GEORGIA, 26), fill=(245, 236, 219))
-    im.save(OUT / "kaze-poster.jpg", quality=92, optimize=True, progressive=True)
+    d.text((72, 800), "LANAI · HAINAN", font=font(GEORGIA, 26), fill=(245, 236, 219))
+    im.save(OUT / "lanai-poster.jpg", quality=92, optimize=True, progressive=True)
 
 def palette():
     im = Image.new("RGB", (1600, 560), (240, 233, 221))

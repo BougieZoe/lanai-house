@@ -15,7 +15,7 @@ export const LANGUAGES = [
 
 const zh = {
   meta: {
-    title: 'kaze.house · 海南 | Kaze House',
+    title: 'LANAI · Hainan | A tropical courtyard villa',
     description: '一栋会呼吸的海南热带住宅：深檐、檐廊、穿堂风与泳池。Blender + three.js 交互模型。',
   },
   nav: ['概念', '空间', '材料', '气候', '图纸'],
@@ -29,7 +29,7 @@ const zh = {
     time: { label: '光线', day: '日间', dusk: '黄昏', night: '夜晚' },
     hint: '拖拽旋转 · 滚轮缩放 · 右键平移',
     roomCardFocus: '带我去看看',
-    loading: { title: 'kaze.house · 海南', sub: '正在从 Blender 搬来一栋房子' },
+    loading: { title: 'LANAI · HAINAN', sub: '正在从 Blender 搬来一栋房子' },
     error: { title: '模型没有加载成功', text: '请确认 WebGL 可用，或刷新页面重试。' },
     plan: {
       eyebrow: 'DRAWINGS · 1:100',
@@ -150,7 +150,7 @@ const zh = {
 
 const en = {
   meta: {
-    title: 'kaze.house · Hainan | A tropical courtyard villa',
+    title: 'LANAI · Hainan | A tropical courtyard villa',
     description: 'A house that breathes: deep eaves, cross ventilation, an engawa and a pool in tropical Hainan. Interactive Blender + three.js model.',
   },
   nav: ['Concept', 'Spaces', 'Materials', 'Climate', 'Drawings'],
@@ -164,7 +164,7 @@ const en = {
     time: { label: 'Light', day: 'Day', dusk: 'Dusk', night: 'Night' },
     hint: 'Drag to orbit · Scroll to zoom · Right-drag to pan',
     roomCardFocus: 'Take me there',
-    loading: { title: 'kaze.house · Hainan', sub: 'Moving a house over from Blender' },
+    loading: { title: 'LANAI · Hainan', sub: 'Moving a house over from Blender' },
     error: { title: 'The model could not load', text: 'Check that WebGL is available, then refresh the page.' },
     plan: {
       eyebrow: 'DRAWINGS · 1:100',
@@ -285,7 +285,7 @@ const en = {
 
 const ja = {
   meta: {
-    title: 'kaze.house · 海南 | Kaze House',
+    title: 'LANAI · Hainan | A tropical courtyard villa',
     description: '風が通り抜ける海南の熱帯住宅。深い軒、縁側、プール。Blender + three.js のインタラクティブモデル。',
   },
   nav: ['コンセプト', '空間', '素材', '気候', '図面'],
@@ -299,7 +299,7 @@ const ja = {
     time: { label: '光', day: '昼', dusk: '夕暮れ', night: '夜' },
     hint: 'ドラッグで回転 · スクロールでズーム · 右ドラッグで移動',
     roomCardFocus: 'ここへ行く',
-    loading: { title: 'kaze.house · 海南', sub: 'Blenderから家を運んでいます' },
+    loading: { title: 'LANAI · HAINAN', sub: 'Blenderから家を運んでいます' },
     error: { title: 'モデルを読み込めませんでした', text: 'WebGLが利用できるか確認して、ページを再読み込みしてください。' },
     plan: {
       eyebrow: 'DRAWINGS · 1:100', title: '平面図', titleEn: '/ FLOOR PLANS',
@@ -408,7 +408,7 @@ const ja = {
 
 const ko = {
   meta: {
-    title: 'kaze.house · 하이난 | Kaze House',
+    title: 'LANAI · Hainan | A tropical courtyard villa',
     description: '바람이 통하는 하이난의 열대 주택. 깊은 처마, 엔가와, 수영장. Blender + three.js 인터랙티브 모델.',
   },
   nav: ['콘셉트', '공간', '재료', '기후', '도면'],
@@ -422,7 +422,7 @@ const ko = {
     time: { label: '빛', day: '낮', dusk: '황혼', night: '밤' },
     hint: '드래그로 회전 · 스크롤로 확대 · 오른쪽 드래그로 이동',
     roomCardFocus: '여기로 가기',
-    loading: { title: 'kaze.house · 하이난', sub: 'Blender에서 집을 옮기는 중' },
+    loading: { title: 'LANAI · HAINAN', sub: 'Blender에서 집을 옮기는 중' },
     error: { title: '모델을 불러오지 못했습니다', text: 'WebGL 사용 가능 여부를 확인한 뒤 페이지를 새로고침하세요.' },
     plan: {
       eyebrow: 'DRAWINGS · 1:100', title: '평면도', titleEn: '/ FLOOR PLANS',
@@ -531,7 +531,7 @@ const ko = {
 
 const fr = {
   meta: {
-    title: 'kaze.house · Hainan | Une villa tropicale',
+    title: 'LANAI · Hainan | Une villa tropicale',
     description: 'Une maison qui respire à Hainan : grands débords, engawa, ventilation traversante et piscine. Modèle interactif Blender + three.js.',
   },
   nav: ['Concept', 'Espaces', 'Matières', 'Climat', 'Plans'],
@@ -542,7 +542,7 @@ const fr = {
     time: { label: 'Lumière', day: 'Jour', dusk: 'Crépuscule', night: 'Nuit' },
     hint: 'Glisser pour tourner · molette pour zoomer · clic droit pour déplacer',
     roomCardFocus: 'M’y emmener',
-    loading: { title: 'kaze.house · Hainan', sub: 'La maison arrive depuis Blender' },
+    loading: { title: 'LANAI · Hainan', sub: 'La maison arrive depuis Blender' },
     error: { title: 'Le modèle n’a pas pu être chargé', text: 'Vérifiez que WebGL est disponible, puis rechargez la page.' },
     plan: {
       eyebrow: 'DRAWINGS · 1:100', title: 'Plans', titleEn: '/ FLOOR PLANS',
@@ -651,7 +651,7 @@ const fr = {
 
 const de = {
   meta: {
-    title: 'kaze.house · Hainan | Eine tropische Villa',
+    title: 'LANAI · Hainan | Eine tropische Villa',
     description: 'Ein Haus, das atmet: tiefe Dächer, Engawa, Querlüftung und Pool in Hainan. Interaktives Blender- und three.js-Modell.',
   },
   nav: ['Konzept', 'Räume', 'Materialien', 'Klima', 'Pläne'],
@@ -662,7 +662,7 @@ const de = {
     time: { label: 'Licht', day: 'Tag', dusk: 'Dämmerung', night: 'Nacht' },
     hint: 'Ziehen zum Drehen · Scrollen zum Zoomen · Rechtsziehen zum Verschieben',
     roomCardFocus: 'Dorthin gehen',
-    loading: { title: 'kaze.house · Hainan', sub: 'Ein Haus wird aus Blender herübergeholt' },
+    loading: { title: 'LANAI · Hainan', sub: 'Ein Haus wird aus Blender herübergeholt' },
     error: { title: 'Das Modell konnte nicht geladen werden', text: 'Prüfe, ob WebGL verfügbar ist, und lade die Seite neu.' },
     plan: {
       eyebrow: 'DRAWINGS · 1:100', title: 'Grundrisse', titleEn: '/ FLOOR PLANS',
@@ -771,7 +771,7 @@ const de = {
 
 const es = {
   meta: {
-    title: 'kaze.house · Hainan | Una villa tropical',
+    title: 'LANAI · Hainan | Una villa tropical',
     description: 'Una casa que respira en Hainan: aleros profundos, engawa, ventilación cruzada y piscina. Modelo interactivo Blender + three.js.',
   },
   nav: ['Concepto', 'Espacios', 'Materiales', 'Clima', 'Planos'],
@@ -782,7 +782,7 @@ const es = {
     time: { label: 'Luz', day: 'Día', dusk: 'Atardecer', night: 'Noche' },
     hint: 'Arrastra para girar · rueda para zoom · botón derecho para desplazar',
     roomCardFocus: 'Llévame allí',
-    loading: { title: 'kaze.house · Hainan', sub: 'Trayendo una casa desde Blender' },
+    loading: { title: 'LANAI · Hainan', sub: 'Trayendo una casa desde Blender' },
     error: { title: 'No se pudo cargar el modelo', text: 'Comprueba que WebGL esté disponible y recarga la página.' },
     plan: {
       eyebrow: 'DRAWINGS · 1:100', title: 'Planos', titleEn: '/ FLOOR PLANS',
@@ -891,7 +891,7 @@ const es = {
 
 const it = {
   meta: {
-    title: 'kaze.house · Hainan | Una villa tropicale',
+    title: 'LANAI · Hainan | Una villa tropicale',
     description: 'Una casa che respira a Hainan: ampi sporti, engawa, ventilazione trasversale e piscina. Modello interattivo Blender + three.js.',
   },
   nav: ['Concetto', 'Spazi', 'Materiali', 'Clima', 'Tavole'],
@@ -902,7 +902,7 @@ const it = {
     time: { label: 'Luce', day: 'Giorno', dusk: 'Tramonto', night: 'Notte' },
     hint: 'Trascina per ruotare · rotella per zoom · tasto destro per spostare',
     roomCardFocus: 'Portami lì',
-    loading: { title: 'kaze.house · Hainan', sub: 'Stiamo portando una casa da Blender' },
+    loading: { title: 'LANAI · Hainan', sub: 'Stiamo portando una casa da Blender' },
     error: { title: 'Impossibile caricare il modello', text: 'Verifica che WebGL sia disponibile e ricarica la pagina.' },
     plan: {
       eyebrow: 'DRAWINGS · 1:100', title: 'Piante', titleEn: '/ FLOOR PLANS',

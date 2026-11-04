@@ -1,7 +1,7 @@
-![kaze.house, a tropical courtyard villa in Hainan](renders/kaze-cover.jpg)
+![LANAI, a tropical courtyard villa in Hainan](renders/lanai-cover.jpg)
 
-<h1 align="center">kaze.house</h1>
-<h3 align="center">风之家 · Hainan</h3>
+<h1 align="center">LANAI</h1>
+<h3 align="center">HAINAN · 2026</h3>
 
 <p align="center"><em>A tropical courtyard villa, written for the Hainan light.</em></p>
 
@@ -13,13 +13,13 @@
 
 ## The film
 
-[![kaze.house — a 46-second 2K film](renders/kaze-loop.gif)](media/kaze-house.mp4)
+[![LANAI — a 46-second 2K film](renders/lanai-loop.gif)](media/lanai-house.mp4)
 
-**▶ [Watch the full 46-second film in 2K](media/kaze-house.mp4)** &nbsp;·&nbsp; `2560 × 1440` &nbsp;·&nbsp; no voiceover
+**▶ [Watch the full 46-second film in 2K](media/lanai-house.mp4)** &nbsp;·&nbsp; `2560 × 1440` &nbsp;·&nbsp; no voiceover
 
 The loop above is a 10-second preview; the full film moves from morning to noon, dusk and night, then through the house: exterior 360°, entrance, LDK, stair, pool, master bedroom and study.
 
-*If the loop does not autoplay in your reader, open the [poster](renders/kaze-poster.jpg) or the [MP4](media/kaze-house.mp4) directly.*
+*If the loop does not autoplay in your reader, open the [poster](renders/lanai-poster.jpg) or the [MP4](media/lanai-house.mp4) directly.*
 
 <details>
 <summary>Film chapters</summary>
@@ -46,9 +46,9 @@ The loop above is a 10-second preview; the full film moves from morning to noon,
 
 ## The model
 
-[![Download the kaze.house GLB](renders/kaze-model.jpg)](public/models/kaze_house.glb)
+[![Download the LANAI GLB](renders/lanai-model.jpg)](public/models/lanai_house.glb)
 
-**[Download the GLB →](public/models/kaze_house.glb)** &nbsp;·&nbsp; `18.6 MB` &nbsp;·&nbsp; 10 merged meshes
+**[Download the GLB →](public/models/lanai_house.glb)** &nbsp;·&nbsp; `18.6 MB` &nbsp;·&nbsp; 10 merged meshes
 
 The GLB is the same model used in the viewer. Open it in Blender, or drag it into [glTF Viewer](https://gltf-viewer.donmccurdy.com/). The pool water is kept as a separate mesh so it can animate; everything else is merged for real-time performance.
 
@@ -56,9 +56,9 @@ The GLB is the same model used in the viewer. Open it in Blender, or drag it int
 
 ## A house that breathes
 
-**kaze.house** is a two-storey villa on a walled 26 × 31 m site in Hainan. It begins with the domestic warmth of a compact family house — the front yard, the laundry pole, the doghouse, the room that opens to the garden — and translates it into a tropical architecture of deep eaves, cross ventilation, shaded decks and water.
+**LANAI** is a two-storey villa on a walled 26 × 31 m site in Hainan. It begins with the domestic warmth of a compact family house — the front yard, the laundry pole, the doghouse, the room that opens to the garden — and translates it into a tropical architecture of deep eaves, cross ventilation, shaded decks and water.
 
-The name is a lowercase address rather than a project name: **kaze** (風) is Japanese for wind, and **.house** makes it feel like somewhere you can save. It is a small joke about a house that is mostly air.
+The name comes from the Hawaiian **lānai** — a roofed veranda, the room between inside and garden. It is the kind of room this house is built around: shaded, open, a little in between.
 
 > A house is remembered less for its living room than for the unscheduled time under its eaves.
 
@@ -122,7 +122,7 @@ Cross ventilation is genuinely good for a hot-humid climate: it lowers indoor hu
 
 | Living / dining | Master bedroom |
 |---|---|
-| ![](renders/kaze-interior.jpg) | ![](renders/kaze-master.jpg) |
+| ![](renders/lanai-interior.jpg) | ![](renders/lanai-master.jpg) |
 
 The interior is deliberately quiet: **lime plaster, teak, rattan, linen, basalt, sage and a single thread of terracotta**. Colour is carried by textiles and ceramics, not by painted walls. The result is a house that feels warm in the evening and cool at noon.
 
@@ -174,9 +174,9 @@ All textures are procedural, generated in Blender and packed into the glTF. No e
 
 | Dusk | Night |
 |---|---|
-| ![](renders/kaze-dusk.jpg) | ![](renders/kaze-night.jpg) |
+| ![](renders/lanai-dusk.jpg) | ![](renders/lanai-night.jpg) |
 | **The stair, clear** | **Pool and engawa** |
-| ![](renders/kaze-stair.jpg) | ![](renders/kaze-pool.jpg) |
+| ![](renders/lanai-stair.jpg) | ![](renders/lanai-pool.jpg) |
 
 The same house, read in three lights. The stair is a clear object in the hall — no furniture in its footprint. At dusk the interiors warm up; at night the pool becomes a cyan lantern in the garden.
 
@@ -198,7 +198,7 @@ The same house, read in three lights. The stair is a clear object in the hall �
 
 ## Explore the house
 
-![kaze.house interactive viewer](renders/final_ui.png)
+![LANAI interactive viewer](renders/final_ui.png)
 
 The viewer includes:
 
@@ -239,7 +239,7 @@ blender/
   villa_details.py        curtains, lamps, styling, lived-in details
   villa_outdoor.py        engawa, pavilion, outdoor furniture
   villa_landscape.py      site, pool, walls, carport, planting
-  kaze_house.blend
+  lanai_house.blend
 
 src/
   main.js                 viewer, camera, interaction, film mode
@@ -249,8 +249,8 @@ src/
   roam.js                 first-person controller and collision
   plan.js                 generated 1F / 2F plans
 
-public/models/            kaze_house.glb (18.6 MB, 10 merged meshes)
-media/                    kaze-house.mp4 (46 seconds, 2560 × 1440)
+public/models/            lanai_house.glb (18.6 MB, 10 merged meshes)
+media/                    lanai-house.mp4 (46 seconds, 2560 × 1440)
 renders/                  stills, cover, palette, README loop
 ```
 
@@ -288,6 +288,6 @@ Rebuild the model:
 
 ## Credits
 
-Design, modelling, text and film: **kaze.house study** · Hainan, 2026.
+Design, modelling, text and film: **LANAI study** · Hainan, 2026.
 
 A fan-made architectural study, made with affection for the Nohara family home in *Crayon Shin-chan*. Not affiliated with the original animation. Drawings are concept drawings, not construction documents.

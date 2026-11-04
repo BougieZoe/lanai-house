@@ -1,4 +1,4 @@
-"""Build the Kaze House in Blender and export a glTF binary.
+"""Build the LANAI in Blender and export a glTF binary.
 
 Run:
   /Applications/Blender.app/Contents/MacOS/Blender -b --python blender/build_villa.py
@@ -59,6 +59,6 @@ def build():
 
 if __name__ == "__main__":
     scene, mats = build()
-    out = ROOT / "blender" / "kaze_house.blend"
+    out = ROOT / "blender" / "lanai_house.blend"
     bpy.ops.wm.save_as_mainfile(filepath=str(out))
     print("SAVED", out)

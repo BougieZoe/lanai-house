@@ -539,7 +539,7 @@ def build_shell(mats):
     # house plaque
     box("TRIM_Plaque", 2.32, 2.92, MAIN[2]-0.045, MAIN[2]-0.015, 1.58, 2.06,
         mats["teak_dark"], trim, bevel=0.006)
-    text_mesh("TRIM_PlaqueText", "KAZE 01", (2.62, MAIN[2]-0.06, 1.82), 0.075,
+    text_mesh("TRIM_PlaqueText", "LANAI 01", (2.62, MAIN[2]-0.06, 1.82), 0.075,
               mats["stone_light"], trim, rot=(math.pi/2, 0, 0), extrude=0.003)
     # downlights at entry
     for xx in (0.55, 2.75):

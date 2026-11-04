@@ -1,4 +1,4 @@
-"""Kaze House — dimensions and palette.
+"""LANAI — dimensions and palette.
 
 Blender axes: X east, Y north, Z up. The street is south (-Y), the pool is north (+Y).
 All dimensions in metres.

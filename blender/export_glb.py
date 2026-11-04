@@ -66,11 +66,11 @@ def main():
     bg.inputs[0].default_value = (0.55, 0.70, 0.85, 1.0)
     bg.inputs[1].default_value = 0.8
 
-    blend_path = ROOT / "blender" / "kaze_house.blend"
+    blend_path = ROOT / "blender" / "lanai_house.blend"
     bpy.ops.wm.save_as_mainfile(filepath=str(blend_path))
     print("SAVED", blend_path, flush=True)
 
-    glb_path = ROOT / "public" / "models" / "kaze_house.glb"
+    glb_path = ROOT / "public" / "models" / "lanai_house.glb"
     glb_path.parent.mkdir(parents=True, exist_ok=True)
     bpy.ops.export_scene.gltf(
         filepath=str(glb_path),

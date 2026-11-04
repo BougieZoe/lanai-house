@@ -20,7 +20,7 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 
 const langCodes = LANGUAGES.map((l) => l.code);
 let lang = 'zh';
-try { lang = localStorage.getItem('kaze-house-lang') || 'zh'; } catch (e) { lang = 'zh'; }
+try { lang = localStorage.getItem('lanai-house-lang') || 'zh'; } catch (e) { lang = 'zh'; }
 if (!langCodes.includes(lang)) lang = 'zh';
 let t = getLang(lang);
 
@@ -398,9 +398,9 @@ function setLabels(on) {
 // ------------------------------------------------------------------ loading
 const loader = new GLTFLoader();
 let loadStart = performance.now();
-loader.load('/models/kaze_house.glb', (gltf) => {
+loader.load('/models/lanai_house.glb', (gltf) => {
   model = gltf.scene;
-  model.name = 'KAZE_HOUSE';
+  model.name = 'LANAI_HOUSE';
   model.traverse((o) => {
     if (!o.isMesh) return;
     o.castShadow = true;
@@ -441,7 +441,7 @@ loader.load('/models/kaze_house.glb', (gltf) => {
   console.error(err);
   $('#loading').classList.add('is-hidden');
   $('#error').classList.add('is-on');
-  $('#errorText').textContent = '模型文件没有加载成功。请确认 public/models/kaze_house.glb 存在，并通过本地开发服务器打开页面。';
+  $('#errorText').textContent = '模型文件没有加载成功。请确认 public/models/lanai_house.glb 存在，并通过本地开发服务器打开页面。';
 });
 
 // --------------------------------------------------------------- interior lights
@@ -835,7 +835,7 @@ function setLanguage(code, save = true) {
   const select = $('#langSelect');
   if (select) select.value = lang;
   if (save) {
-    try { localStorage.setItem('kaze-house-lang', lang); } catch (e) {}
+    try { localStorage.setItem('lanai-house-lang', lang); } catch (e) {}
   }
 }
 
