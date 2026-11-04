@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#1e2b23" />
+  <title>LANAI · Hainan | A tropical courtyard villa</title>
+  <meta name="description" content="一栋会呼吸的海南热带住宅：深檐、檐廊、穿堂风与泳池。Blender + three.js 交互模型。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b4552d'/%3E%3Cpath d='M10 36 32 14l22 22v16H10z' fill='%23f1e7d3'/%3E%3Crect x='26' y='36' width='12' height='16' fill='%235f4630'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="/lanai-house/assets/index-dtgE5_RK.js"></script>
+  <link rel="stylesheet" crossorigin href="/lanai-house/assets/index-Q0jemskL.css">
+</head>
+<body>
+  <div id="app">
+    <div id="scene" aria-label="LANAI Hainan villa 3D model"></div>
+    <div id="labels" class="labels"></div>
+    <div class="vignette"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark">L</span>
+        <span class="brand-text">
+          <strong>LANAI</strong>
+          <small>HAINAN / 2026</small>
+        </span>
+      </a>
+      <nav class="topnav" aria-label="页面导航">
+        <button data-scroll="concept">概念</button>
+        <button data-scroll="spaces">空间</button>
+        <button data-scroll="materials">材料</button>
+        <button data-scroll="climate">气候</button>
+        <button id="planOpenTop">图纸</button>
+      </nav>
+      <div class="top-actions">
+        <label class="lang-switch" title="Language">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+          <select id="langSelect" aria-label="Language"></select>
+        </label>
+        <button class="round-btn" id="autoRotate" title="自动旋转" aria-label="自动旋转">
+          <svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 6.4M20 4v7h-7"/></svg>
+        </button>
+        <button class="round-btn menu-btn" id="panelToggle" title="展开信息" aria-label="展开信息">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="panel" id="panel" aria-label="设计说明">
+      <div class="panel-inner">
+        <section id="top" class="intro">
+          <div class="eyebrow">HAINAN · TROPICAL RESIDENCE · 2026</div>
+          <h1>把蜡笔小新的家，<br /><em>搬到海南。</em></h1>
+          <p class="lede">一栋会呼吸的家：深檐、穿堂风、檐廊与一池水，把日常安放在海南的热带光线里。</p>
+          <div class="intro-meta">
+            <span>建筑 190 m²</span><span>3 卧</span><span>2.5 卫</span><span>泳池</span>
+          </div>
+        </section>
+
+        <section id="concept" class="section">
+          <div class="section-head"><span>01</span><h2>概念</h2><small>CONCEPT</small></div>
+          <p>不是复刻动画里的平面，而是提取它的“生活原型”：一栋紧凑的两层住宅，一条能看见院子的檐廊，一个从厨房递出冰饮的窗口，以及一条晾着白衬衫的阳台。</p>
+          <p>海南的气候把房子向外推。屋檐出挑 1.1 米，西侧用柚木格栅过滤午后阳光；客厅与檐廊之间是一整面可完全打开的推拉门，风从南院穿过客厅，从北侧檐廊离开。</p>
+          <figure class="quote">
+            <blockquote>“一栋房子真正被记住的，往往不是客厅，而是屋檐下那段没有安排的时间。”</blockquote>
+            <figcaption>设计手记 / 2026.11</figcaption>
+          </figure>
+        </section>
+
+        <section id="spaces" class="section">
+          <div class="section-head"><span>02</span><h2>空间</h2><small>PROGRAM</small></div>
+          <div class="room-list">
+            <button class="room-row" data-room="living"><b>01</b><span>客厅 / 餐厅 / 厨房</span><em>LDK · 65 m²</em></button>
+            <button class="room-row" data-room="engawa"><b>02</b><span>后檐廊</span><em>ENGawa · 13 m²</em></button>
+            <button class="room-row" data-room="master"><b>03</b><span>主卧 + 南向阳台</span><em>MASTER · 22 m²</em></button>
+            <button class="room-row" data-room="kids"><b>04</b><span>儿童房</span><em>KIDS · 15 m²</em></button>
+            <button class="room-row" data-room="study"><b>05</b><span>书房 / 客房</span><em>STUDY · 13 m²</em></button>
+            <button class="room-row" data-room="pool"><b>06</b><span>泳池与庭院</span><em>POOL · 5.6 × 3.6 m</em></button>
+          </div>
+        </section>
+
+        <section id="materials" class="section">
+          <div class="section-head"><span>03</span><h2>材料</h2><small>PALETTE</small></div>
+          <div class="swatches">
+            <div class="swatch"><i style="--c:#b24e32"></i><span>海南红陶瓦</span><small>ROOF TILE</small></div>
+            <div class="swatch"><i style="--c:#e9dfcc"></i><span>石灰泥墙</span><small>LIME PLASTER</small></div>
+            <div class="swatch"><i style="--c:#6b4a32"></i><span>柚木</span><small>TEAK</small></div>
+            <div class="swatch"><i style="--c:#8b897f"></i><span>火山石</span><small>BASALT</small></div>
+            <div class="swatch"><i style="--c:#4f6c5a"></i><span>鼠尾草绿</span><small>SAGE</small></div>
+            <div class="swatch"><i style="--c:#2f8f8a"></i><span>池水</span><small>POOL</small></div>
+          </div>
+          <p class="small-note">所有材料均为程序化材质：屋面瓦、灰泥、柚木与泳池马赛克由脚本生成贴图，并随 glTF 一同打包。</p>
+        </section>
+
+        <section id="climate" class="section">
+          <div class="section-head"><span>04</span><h2>气候</h2><small>CLIMATE</small></div>
+          <ul class="climate-list">
+            <li><b>深檐 1.1 m</b><span>阻断正午直射，保护墙面与窗户。</span></li>
+            <li><b>穿堂风</b><span>南院进风，北侧高窗与檐廊出风。</span></li>
+            <li><b>西晒格栅</b><span>柚木百叶与攀援植物过滤午后热辐射。</span></li>
+            <li><b>半室外</b><span>檐廊、凉亭与泳池把生活带到阴影里。</span></li>
+            <li><b>雨水链</b><span>屋面雨水经链落入石钵，减少溅水。</span></li>
+          </ul>
+        </section>
+
+        <section class="section credits">
+          <div class="section-head"><span>05</span><h2>建造</h2><small>CREDITS</small></div>
+          <p>Blender 5.2 程序化建模 / glTF 2.0 导出 / three.js r181 实时渲染。动画与交互由浏览器完成，模型不包含任何外部 3D 资产。</p>
+          <p class="tiny">A fan-made architectural study. Not affiliated with the original animation.</p>
+        </section>
+      </div>
+    </aside>
+
+    <button class="panel-reopen" id="panelReopen" aria-label="Open information panel">
+      <span>INFO</span><b>›</b>
+    </button>
+
+    <div class="dock" aria-label="视角与显示控制">
+      <div class="dock-views">
+        <button class="dock-btn is-active" data-view="overview"><span>全景</span><small>OVERVIEW</small></button>
+        <button class="dock-btn" data-view="entry"><span>入口</span><small>ENTRY</small></button>
+        <button class="dock-btn" data-view="garden"><span>庭院</span><small>GARDEN</small></button>
+        <button class="dock-btn" data-view="pool"><span>泳池</span><small>POOL</small></button>
+        <button class="dock-btn" data-view="cutaway"><span>剖切</span><small>CUTAWAY</small></button>
+      </div>
+      <div class="dock-tools">
+        <button class="tool-btn roam-tool" id="roamToggle" title="进入自由漫游">
+          <svg viewBox="0 0 24 24"><circle cx="13" cy="4.5" r="1.7"/><path d="M13 7.5v5l3 2 2 5M13 10l-3 3v5M10 13l-3-3M13 12.5l3-2.5"/></svg>
+          <span>漫游</span>
+        </button>
+        <button class="tool-btn" id="roofToggle" title="显示 / 隐藏屋顶">
+          <svg viewBox="0 0 24 24"><path d="M3 12 12 4l9 8M6 10v9h12v-9"/></svg>
+          <span>屋顶</span>
+        </button>
+        <button class="tool-btn" id="floorToggle" title="显示 / 隐藏二层">
+          <svg viewBox="0 0 24 24"><path d="M4 19h16M4 13h16M4 7h16"/></svg>
+          <span>二层</span>
+        </button>
+        <button class="tool-btn" id="labelToggle" title="房间标签">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v10H8l-4 4z"/></svg>
+          <span>标签</span>
+        </button>
+        <button class="tool-btn" id="planOpen" title="平面图">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 9v11"/></svg>
+          <span>图纸</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="timebar" aria-label="时间">
+      <span class="time-label">光线</span>
+      <button class="time-btn is-active" data-time="day">日间</button>
+      <button class="time-btn" data-time="dusk">黄昏</button>
+      <button class="time-btn" data-time="night">夜晚</button>
+    </div>
+
+    <div class="hint"><span class="dot"></span>拖拽旋转 · 滚轮缩放 · 右键平移</div>
+
+    <div class="room-card" id="roomCard" aria-live="polite">
+      <button class="room-card-close" id="roomCardClose" aria-label="关闭">×</button>
+      <div class="room-card-kicker" id="roomCardKicker">SPACE 01</div>
+      <h3 id="roomCardTitle">客厅 · 餐厅 · 厨房</h3>
+      <p id="roomCardText"></p>
+      <div class="room-card-meta" id="roomCardMeta"></div>
+      <button class="room-card-focus" id="roomCardFocus">带我去看看 <span>↗</span></button>
+    </div>
+
+    <div class="plan-modal" id="planModal" aria-hidden="true">
+      <div class="plan-modal-head">
+        <div>
+          <div class="eyebrow">DRAWINGS · 1:100</div>
+          <h2>平面图 <span>/ FLOOR PLANS</span></h2>
+        </div>
+        <button class="plan-close" id="planClose" aria-label="关闭平面图">×</button>
+      </div>
+      <div class="plan-tabs">
+        <button class="plan-tab is-active" data-plan="gf">1F · 生活层</button>
+        <button class="plan-tab" data-plan="f2">2F · 卧室层</button>
+        <span class="plan-note">单位：米 · 北向朝上</span>
+      </div>
+      <div class="plan-stage" id="planStage"></div>
+      <div class="plan-legend">
+        <span><i class="lg-wall"></i>墙体</span>
+        <span><i class="lg-wet"></i>湿区</span>
+        <span><i class="lg-deck"></i>木作 / 檐廊</span>
+        <span><i class="lg-pool"></i>水面</span>
+        <span class="plan-scale">0&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3 m</span>
+      </div>
+    </div>
+
+    <div class="cinema-layer" id="cinemaLayer" aria-hidden="true">
+      <i class="cinema-bar cinema-bar-top"></i>
+      <i class="cinema-bar cinema-bar-bottom"></i>
+      <div class="cinema-title" id="cinemaTitle">
+        <span>HAINAN / 2026</span>
+        <h2>LANAI</h2>
+        <p>A tropical courtyard villa · Hainan</p>
+        <small>ARCHITECTURAL STUDY / 2026</small>
+      </div>
+    </div>
+
+    <div class="roam-hud" id="roamHud" aria-hidden="true">
+      <div class="roam-top">
+        <div class="roam-brand"><span id="roamBadgeSub">FREE ROAM</span><b id="roamBadge">自由漫游</b></div>
+        <div class="roam-floors">
+          <button class="roam-floor-btn is-active" data-floor="1">1F</button>
+          <button class="roam-floor-btn" data-floor="2">2F</button>
+        </div>
+        <button class="roam-exit" id="roamExit"><span>退出漫游</span><kbd>ESC</kbd></button>
+      </div>
+      <div class="roam-crosshair" aria-hidden="true"></div>
+      <div class="roam-lock-hint" id="roamLockHint">点击画面锁定鼠标</div>
+      <div class="roam-bottom">
+        <div class="roam-current">
+          <small id="roamCurrentLabel">当前空间</small>
+          <strong id="roamRoomName">前院</strong>
+          <em id="roamFloorName">1F · 生活层</em>
+        </div>
+        <div class="roam-prompt" id="roamPrompt"></div>
+        <div class="roam-help" id="roamHelp">WASD / 方向键移动 · 鼠标环顾 · Shift 加速 · E 上下楼 · Esc 退出</div>
+      </div>
+      <div class="roam-joystick" id="roamJoystick"><i></i></div>
+    </div>
+
+    <div class="loading" id="loading">
+      <div class="loading-house">
+        <svg viewBox="0 0 120 80" aria-hidden="true">
+          <path class="lh-roof" d="M8 38 60 6l52 32" />
+          <path class="lh-wall" d="M21 34v37h78V34" />
+          <rect class="lh-door" x="53" y="48" width="14" height="23" />
+          <path class="lh-window" d="M30 44h14v12H30zM76 44h14v12H76z" />
+          <path class="lh-ground" d="M4 72h112" />
+        </svg>
+      </div>
+      <div class="loading-title">LANAI · HAINAN</div>
+      <div class="loading-sub">正在从 Blender 搬来一栋房子</div>
+      <div class="loading-bar"><i id="loadingBar"></i></div>
+      <div class="loading-pct" id="loadingPct">0%</div>
+    </div>
+
+    <div class="error" id="error">
+      <h2>模型没有加载成功</h2>
+      <p id="errorText">请确认 WebGL 可用，或刷新页面重试。</p>
+    </div>
+  </div>
+</body>
+</html>
